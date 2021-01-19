@@ -1,0 +1,22 @@
+# Backup files
+*~
+
+# hourly changing Package Control files
+Package Control.last-run
+Package Control.ca-list
+Package Control.ca-bundle
+Package Control.system-ca-bundle
+Package Control.cache/
+Package Control.ca-certs/
+
+# Monokai Pro license settings - this file contains my license key
+Theme - Monokai Pro.sublime-settings
+Theme - Monokai Pro/
+
+# no archive files
+*.zip
+*.7z
+*.rar
+*.tar.gz
+*.tar.bz2
+

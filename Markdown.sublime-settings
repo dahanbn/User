@@ -1,0 +1,5 @@
+// These settings override both User and Default settings for the Markdown syntax
+{
+    "color_scheme": "Monokai Pro.sublime-color-scheme",
+    "theme": "Monokai Pro.sublime-theme",
+}

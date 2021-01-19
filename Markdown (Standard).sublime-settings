@@ -1,0 +1,7 @@
+// These settings override both User and Default settings for the Markdown (Standard) syntax
+{
+    "font_face": "Polo 11",
+    "font_size": 15,
+    "color_scheme": "Monokai Pro.sublime-color-scheme",
+    "theme": "Monokai Pro.sublime-theme",
+}

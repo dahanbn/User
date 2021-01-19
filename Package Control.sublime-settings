@@ -1,0 +1,28 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Advanced CSV",
+		"BracketHighlighter",
+		"Emmet",
+		"GitGutter",
+		"Indent XML",
+		"LaTeXTools",
+		"MarkdownEditing",
+		"MarkdownPreview",
+		"orgmode",
+		"Package Control",
+		"Pandoc",
+		"PlainTasks",
+		"PowerShell",
+		"Pretty JSON",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"Terminal",
+		"Theme - Monokai Pro",
+		"Yet Another Launcher",
+	],
+}
