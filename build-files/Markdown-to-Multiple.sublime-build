@@ -1,0 +1,20 @@
+{
+    "selector": "text.html.markdown",
+    "working_dir": "$file_path",
+    "variants":
+    [
+        {
+            "name": "pandoc => pdf (scrlttr2dh)",
+            "cmd": ["pandoc.exe", "$file", "--from", "markdown", "--template", "scrlttr2dh.latex", "--pdf-engine=lualatex", "--to", "pdf", "-o", "${file/\\.md/\\.pdf/}" ],
+        },
+        {
+            "name": "pandoc => html",
+         "cmd": ["pandoc.exe", "$file", "--from", "markdown", "--to", "html", "-o", "${file/\\.md/\\.html/}" ]
+        },
+        {
+            "name": "pandoc => pdfx (scrlttr2dh)",
+            "cmd": ["pandoc.exe", "$file", "--from", "markdown", "--template", "scrlttr2dh.latex", "--pdf-engine=lualatex", "--to", "pdf", "-o", "$file_base_name.pdfx" ],
+        },
+    ]
+    
+}

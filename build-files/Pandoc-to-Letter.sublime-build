@@ -2,7 +2,4 @@
     "selector": "text.html.markdown",
     "working_dir": "$file_path",
     "cmd": ["pandoc.exe", "$file", "--from", "markdown", "--template", "scrlttr2dh.latex", "--pdf-engine=lualatex", "--to", "pdf", "-o", "${file/\\.md/\\.pdf/}" ],
-
-
-
 }
