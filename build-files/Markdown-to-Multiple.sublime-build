@@ -2,20 +2,20 @@
     "selector": "text.html.markdown",
     "working_dir": "$file_path",
     "shell": true,
-    "shell_cmd": "pandoc.exe \"$file\" --from markdown --template scrlttr2dh.latex --pdf-engine=lualatex --to pdf -o \"$file_base_name.pdf\" && \"$file_base_name.pdf\"",
+    "shell_cmd": "pandoc \"$file\" --from markdown --template scrlttr2dh.latex --pdf-engine=lualatex --to pdf -o \"$file_base_name.pdf\" && \"$file_base_name.pdf\"",
     "variants":
     [
         {
             "name": "pandoc => pdf (scrlttr2dh)",
-            "shell_cmd": "pandoc.exe \"$file\" --from markdown --template scrlttr2dh.latex --pdf-engine=lualatex --to pdf -o \"$file_base_name.pdf\" && \"$file_base_name.pdf\"",
+            "shell_cmd": "pandoc \"$file\" --from markdown --template scrlttr2dh.latex --pdf-engine=lualatex --to pdf -o \"$file_base_name.pdf\" && \"$file_base_name.pdf\"",
         },
         {
             "name": "pandoc => html",
-            "shell_cmd": "pandoc.exe \"$file\" --from markdown --html -o \"$file_base_name.html\"",
+            "shell_cmd": "pandoc \"$file\" --from markdown --html -o \"$file_base_name.html\"",
         },
         {
             "name": "pandoc => html + open it",
-            "shell_cmd": "pandoc.exe \"$file\" --from markdown --html -o \"$file_base_name.html\" && \"$file_base_name.html\"",
+            "shell_cmd": "pandoc \"$file\" --from markdown --html -o \"$file_base_name.html\" && \"$file_base_name.html\"",
         },
     ]
     
