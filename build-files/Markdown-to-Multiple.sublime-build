@@ -7,7 +7,22 @@
     [
         {
             "name": "pandoc => pdf (scrlttr2dh)",
-            "shell_cmd": "pandoc \"$file\" --from markdown --template scrlttr2dh.latex --pdf-engine=lualatex --to pdf -o \"$file_base_name.pdf\" && \"$file_base_name.pdf\"",
+            "shell_cmd": "pandoc \"$file\" --from markdown --template scrlttr2dh.latex --pdf-engine=lualatex --to pdf -o \"$file_base_name.pdf\"",
+        },
+        {
+            "name": "pandoc => pdf (scrlttr2dh) & open pdf",
+            "windows": 
+            {
+                "shell_cmd": "pandoc \"$file\" --from markdown --template scrlttr2dh.latex --pdf-engine=lualatex --to pdf -o \"$file_base_name.pdf\" && cmd /c start \"\" \"$file_base_name.pdf\"",
+            },
+             "osx": 
+            {
+                "shell_cmd": "pandoc \"$file\" --from markdown --template scrlttr2dh.latex --pdf-engine=lualatex --to pdf -o \"$file_base_name.pdf\" && open \"$file_base_name.pdf\"",
+            },
+             "linux": 
+            {
+                "shell_cmd": "pandoc \"$file\" --from markdown --template scrlttr2dh.latex --pdf-engine=lualatex --to pdf -o \"$file_base_name.pdf\" && xdg-open \"$file_base_name.pdf\"",
+            },
         },
         {
             "name": "pandoc => html",
@@ -15,7 +30,38 @@
         },
         {
             "name": "pandoc => html + open it",
-            "shell_cmd": "pandoc \"$file\" --from markdown --html -o \"$file_base_name.html\" && \"$file_base_name.html\"",
+            "windows": 
+            {
+                "shell_cmd": "pandoc \"$file\" --from markdown --html -o \"$file_base_name.html\" && cmd /c start \"\" \"$file_base_name.html\"",
+            },
+             "osx": 
+            {
+                "shell_cmd": "pandoc \"$file\" --from markdown --html -o \"$file_base_name.html\" && open \"$file_base_name.html\"",
+            },
+             "linux": 
+            {
+                "shell_cmd": "pandoc \"$file\" --from markdown --html -o \"$file_base_name.html\" && xdg-open \"$file_base_name.html\"",
+            },
+        },
+        {
+            "name": "open directory containing the file",
+            "windows": 
+            {
+                "shell_cmd": "cmd /c start \"\" \"$file_path\"",
+            },
+             "osx": 
+            {
+                "shell_cmd": "open \"$file_path\"",
+            },
+             "linux": 
+            {
+                "shell_cmd": "xdg-open \"$file_path\"",
+
+            },
+        },
+        {
+            "name": "multimarkdown => html",
+            "shell_cmd": "multimarkdown -b \"$file\"",
         },
     ]
     
