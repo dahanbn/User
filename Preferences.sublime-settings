@@ -21,6 +21,13 @@
     // Makes tabs with modified files more visible
     "highlight_modified_tabs": true,
 
+   	// disable internal bracket matching because of the the use of bracket higlighter
+   	"match_brackets": false,
+    "match_brackets_angle": false,
+    "match_brackets_braces": false,
+    "match_brackets_content": false,
+    "match_brackets_square": false,
+    "match_tags": false,
 
 	"color_scheme": "Packages/Theme - Monokai Pro/Monokai Pro.sublime-color-scheme",
 	"theme": "Monokai Pro.sublime-theme",
