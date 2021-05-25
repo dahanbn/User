@@ -56,12 +56,26 @@
              "linux": 
             {
                 "shell_cmd": "xdg-open \"$file_path\"",
-
             },
         },
         {
             "name": "multimarkdown => html",
             "shell_cmd": "multimarkdown -b \"$file\"",
+        },
+        {
+            "name": "multimarkdown => html + open it",
+            "windows": 
+            {
+                "shell_cmd": "multimarkdown -b \"$file\" && cmd /c start \"\" \"$file_base_name.html\"",
+            },
+             "osx": 
+            {
+                "shell_cmd": "open \"$file_path\" && open \"$file_base_name.html\"",
+            },
+             "linux": 
+            {
+                "shell_cmd": "xdg-open \"$file_path\" && xdg-open \"$file_base_name.html\"",
+            },
         },
     ]
     
