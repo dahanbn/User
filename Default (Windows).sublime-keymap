@@ -1,0 +1,5 @@
+[
+     { "keys": ["f12"], "command": "exec", "args": {
+        "shell_cmd": "explorer.exe /select,\"$file\"",
+    }},
+]

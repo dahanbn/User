@@ -1,0 +1,28 @@
+{
+    //
+    // the "launchers" object is needed and contains all launchers
+    //
+    "launchers": { 
+        //
+        // under "launchers" you can create at least one named launcher,
+        // at least you have to define one launcher with the name "default"
+        // 
+        // "default" is used if you launch YAL's default launcher
+        //
+        "default": {
+            // 
+            // in launchers you can create three different objects:
+            // 
+            // "url"       - for urls that will be opened in your default browser
+            // "file+sys"  - for files or directories that will be opened with the
+            //               default application of your operating system
+            // "file+subl" - for files or directories that will be opened in your
+            //               current Sublime Text session
+            "url": {
+                "Sublime Text official documentation": "https://www.sublimetext.com/docs/index.html",
+                "Sublime Text community documentation": "https://docs.sublimetext.io/",
+                "Sublime Text forum": "https://forum.sublimetext.com",
+            },
+    }
+}
+}
