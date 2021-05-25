@@ -47,7 +47,8 @@
             "name": "open directory containing the file",
             "windows": 
             {
-                "shell_cmd": "cmd /c start \"\" \"$file_path\"",
+                //"shell_cmd": "cmd /c start \"\" \"$file_path\"",
+                "shell_cmd": "explorer.exe /select,\"$file\"",
             },
              "osx": 
             {
