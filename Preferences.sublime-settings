@@ -3,7 +3,7 @@
 	[
 		"Markdown",
 		"Vintage",
-	],
+         ],
 	"font_face": "CamingoCode",
  	"font_size": 13,
  	"ensure_newline_at_eof_on_save": true,
