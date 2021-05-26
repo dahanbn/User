@@ -21,3 +21,6 @@ Theme - Monokai Pro/
 *.tar.gz
 *.tar.bz2
 
+# Mac specific 
+.DS_Store
+
