@@ -14,6 +14,10 @@ Package Control.ca-certs/
 Theme - Monokai Pro.sublime-settings
 Theme - Monokai Pro/
 
+# don't include Sublime Text Workspace files
+*.sublime-workspace
+
+
 # no archive files
 *.zip
 *.7z
