@@ -1,0 +1,22 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Users/dh/Documents/python-playground"
+		}
+	],
+	// Add this whole section if not present or just the LSP settings
+    "settings": {
+        "LSP": {
+            "pylsp": {
+                "enabled": true,
+                "command": [
+                    "/Users/dh/Documents/python-playground/.venv/bin/pylsp",
+                ],
+                "settings": {
+                    "pylsp.plugins.flake8.executable": "/Users/dh/Documents/python-playground/.venv/bin/flake8",
+                },
+            },
+        },
+    },
+}

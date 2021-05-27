@@ -7,7 +7,6 @@
 	[
 		"Advanced CSV",
 		"AlignTab",
-		"Anaconda",
 		"Auto Close HTML Tags",
 		"BracketHighlighter",
 		"CSS3",
@@ -23,6 +22,7 @@
 		"INI",
 		"Keymaps",
 		"LaTeXTools",
+		"LSP",
 		"MagicPython",
 		"MarkdownEditing",
 		"MarkdownPreview",
