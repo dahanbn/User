@@ -2,7 +2,8 @@
 	"ignored_packages":
 	[
 		"Markdown",
-		"Vintage",
+		"Python",
+                  "Vintage",
          ],
 	"font_face": "IBM Plex Mono",
  	"ensure_newline_at_eof_on_save": true,
