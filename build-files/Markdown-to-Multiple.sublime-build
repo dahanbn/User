@@ -15,11 +15,11 @@
             {
                 "shell_cmd": "pandoc \"$file\" --from markdown --template scrlttr2dh.latex --pdf-engine=lualatex --to pdf -o \"$file_base_name.pdf\" && cmd /c start \"\" \"$file_base_name.pdf\"",
             },
-             "osx": 
+            "osx": 
             {
                 "shell_cmd": "pandoc \"$file\" --from markdown --template scrlttr2dh.latex --pdf-engine=lualatex --to pdf -o \"$file_base_name.pdf\" && open \"$file_base_name.pdf\"",
             },
-             "linux": 
+            "linux": 
             {
                 "shell_cmd": "pandoc \"$file\" --from markdown --template scrlttr2dh.latex --pdf-engine=lualatex --to pdf -o \"$file_base_name.pdf\" && xdg-open \"$file_base_name.pdf\"",
             },

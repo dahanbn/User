@@ -6,7 +6,8 @@
 		}
 	],
 	// Add this whole section if not present or just the LSP settings
-    "settings": {
+    "settings": 
+    {
         "LSP": {
             "pylsp": {
                 "enabled": true,
@@ -19,4 +20,20 @@
             },
         },
     },
+    "build_systems":
+    [
+        {
+            "name": "Python3 from venv (python-playground)",
+            "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+            "selector": "source.python",
+            "windows":
+            {
+                "cmd": ["python3", "-u", "$file"],
+            },
+            "osx":
+            {
+                "cmd": ["/Users/dh/Documents/python-playground/.venv/bin/python3", "-u", "$file"],
+            }
+        },
+    ],
 }
