@@ -22,17 +22,34 @@
     },
     "build_systems":
     [
-        {
+        {   
             "name": "Python3 from venv (python-playground)",
+            // Terminus
+            //"target": "terminus_exec",
+            //"cancel": "terminus_cancel_build",
+            //"focus": true, 
+            //"timeit": true,
+
+            // alternativ Terminus settings
+            "target": "terminus_open",
+            "auto_close": false,
+            "title": "Python3 output",
+            "timeit": true,
+            "post_window_hooks": [
+                ["carry_file_to_pane", {"direction": "right"}]
+            ],
+            // normal build file
+            
             "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
             "selector": "source.python",
+            "env": {"PYTHONIOENCODING": "utf-8"},
             "windows":
             {
-                "cmd": ["python3", "-u", "$file"],
+                "shell_cmd": "python3 -u \"$file\"",
             },
             "osx":
             {
-                "cmd": ["/Users/dh/Documents/python-playground/.venv/bin/python3", "-u", "$file"],
+                "shell_cmd": "/Users/dh/Documents/python-playground/.venv/bin/python3 -u \"$file\"",
             }
         },
     ],
