@@ -1,0 +1,56 @@
+{
+	"folders":
+	[
+		{
+			"path": "D:\\git-repositories\\python-playground"
+		}
+	],
+	// Add this whole section if not present or just the LSP settings
+    "settings": 
+    {
+        "LSP": {
+            "pylsp": {
+                "enabled": true,
+                "command": [
+                    "/Users/dh/Documents/python-playground/.venv/bin/pylsp",
+                ],
+                "settings": {
+                    "pylsp.plugins.flake8.executable": "/Users/dh/Documents/python-playground/.venv/bin/flake8",
+                },
+            },
+        },
+    },
+    "build_systems":
+    [
+        {   
+            "name": "Python3 from venv (python-playground)",
+            // Terminus
+            //"target": "terminus_exec",
+            //"cancel": "terminus_cancel_build",
+            //"focus": true, 
+            //"timeit": true,
+
+            // alternativ Terminus settings
+            "target": "terminus_open",
+            "auto_close": false,
+            "title": "Python3 output",
+            "timeit": true,
+            "post_window_hooks": [
+                ["carry_file_to_pane", {"direction": "right"}]
+            ],
+            // normal build file
+            
+            "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+            "selector": "source.python",
+            "env": {"PYTHONIOENCODING": "utf-8"},
+            "windows":
+            {
+                "shell_cmd": "python3 -u \"$file\"",
+            },
+            "osx":
+            {
+                "shell_cmd": "/Users/dh/Documents/python-playground/.venv/bin/python3 -u \"$file\"",
+            }
+        },
+    ],
+}
