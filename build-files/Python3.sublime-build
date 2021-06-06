@@ -14,7 +14,21 @@
         ["carry_file_to_pane", {"direction": "right"}]
     ],
     // normal build file
-    "shell_cmd": "python3 -u \"$file\"",
+
+    
+    "windows":
+    {
+        "shell_cmd": "python -u \"$file\"",
+    },
+    "osx":
+    {
+        "shell_cmd": "python3 -u \"$file\"",
+    },
+    "linux":
+    {
+        "shell_cmd": "python3 -u \"$file\"",
+    },
+            
     "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
     "selector": "source.python",
     "env": {"PYTHONIOENCODING": "utf-8"},
@@ -22,7 +36,19 @@
     [
         {
             "name": "Syntax Check",
-            "shell_cmd": "python3 -m py_compile \"${file}\"",
+            "windows":
+            {
+                "shell_cmd": "python -m py_compile \"${file}\"",
+            },
+            "osx":
+            {
+                "shell_cmd": "python3 -m py_compile \"${file}\"",
+            },
+            "linux":
+            {
+                "shell_cmd": "python3 -m py_compile \"${file}\"",
+            },
+            
         }
     ]
 }

@@ -5,9 +5,15 @@
 			"path": "/Users/dh/Documents/python-playground"
 		}
 	],
-	// Add this whole section if not present or just the LSP settings
     "settings": 
     {
+        // Source for LSP configuration is https://yeray.dev/python/setting-up-sublime-text-4-for-python
+        // Be aware that you must enable it per project
+        // Also you need special settings in Package Settings ==> LSP ==> Settings
+
+        // using LSP-pylsp with black & flake 8 installed in project virtual env
+        // install it in the project virtual env with the following command
+        // pip install python-lsp-server[all] python-lsp-black mypy-ls pyls-isort
         "LSP": {
             "pylsp": {
                 "enabled": true,

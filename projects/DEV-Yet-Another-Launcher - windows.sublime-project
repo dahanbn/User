@@ -1,0 +1,29 @@
+{
+	"folders":
+	[
+		{
+			"path": "C:\\Users\\dhann\\AppData\\Roaming\\Sublime Text\\Packages\\Yet-Another-Launcher"
+		}
+	],
+	    "settings": 
+    {
+        // Source for LSP configuration is https://yeray.dev/python/setting-up-sublime-text-4-for-python
+        // Be aware that you must enable it per project
+        // Also you need special settings in Package Settings ==> LSP ==> Settings
+
+        // using LSP-pylsp with black & flake 8 installed in project virtual env
+        // install it in the project virtual env with the following command
+        // pip install python-lsp-server[all] python-lsp-black mypy-ls pyls-isort
+        "LSP": {
+            "pylsp": {
+                "enabled": true,
+                "command": [
+                    "C:\\Users\\dhann\\AppData\\Roaming\\Sublime Text\\Packages\\Yet-Another-Launcher\\.venv\\Scripts\\pylsp.exe",
+                ],
+                "settings": {
+                    "pylsp.plugins.flake8.executable": "C:\\Users\\dhann\\AppData\\Roaming\\Sublime Text\\Packages\\Yet-Another-Launcher\\.venv\\Scripts\\flake8.exe",
+                },
+            },
+        },
+    },
+}

@@ -3,6 +3,10 @@
 // Source for LSP configuration is https://yeray.dev/python/setting-up-sublime-text-4-for-python
 // Be aware that you must enable it per project
 // look for an example for the python-playground.project
+
+// using LSP-pylsp with black & flake 8 installed in project virtual env
+// install it in the project virtual env with the following command
+// pip install python-lsp-server[all] python-lsp-black mypy-ls pyls-isort
 {
     "clients": {
         "pylsp": {
@@ -18,6 +22,7 @@
                 "pylsp.plugins.jedi_rename.enabled": true,  // included in pyls
                 // File formatter, invoke via LSP: Format file
                 "pylsp.plugins.autopep8.enabled": false,  // enabled by default, use black
+                "pylsp.plugins.yapf.enabled": false,  // enabled by default, use black
                 "pylsp.plugins.black.enabled": true,  // from pyls-black
                 "pylsp.plugins.mypy_ls.enabled": true,  // from mypy-ls
             },

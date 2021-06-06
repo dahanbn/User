@@ -5,17 +5,23 @@
 			"path": "D:\\git-repositories\\python-playground"
 		}
 	],
-	// Add this whole section if not present or just the LSP settings
     "settings": 
     {
+        // Source for LSP configuration is https://yeray.dev/python/setting-up-sublime-text-4-for-python
+        // Be aware that you must enable it per project
+        // Also you need special settings in Package Settings ==> LSP ==> Settings
+
+        // using LSP-pylsp with black & flake 8 installed in project virtual env
+        // install it in the project virtual env with the following command
+        // pip install python-lsp-server[all] python-lsp-black mypy-ls pyls-isort
         "LSP": {
             "pylsp": {
                 "enabled": true,
                 "command": [
-                    "/Users/dh/Documents/python-playground/.venv/bin/pylsp",
+                    "D:\\git-repositories\\python-playground\\.venv\\Scripts\\pylsp.exe",
                 ],
                 "settings": {
-                    "pylsp.plugins.flake8.executable": "/Users/dh/Documents/python-playground/.venv/bin/flake8",
+                    "pylsp.plugins.flake8.executable": "D:\\git-repositories\\python-playground\\.venv\\Scripts\\flake8.exe",
                 },
             },
         },
@@ -45,7 +51,7 @@
             "env": {"PYTHONIOENCODING": "utf-8"},
             "windows":
             {
-                "shell_cmd": "python3 -u \"$file\"",
+                "shell_cmd": "D:\\git-repositories\\python-playground\\.venv\\Scripts\\python.exe -u \"$file\"",
             },
             "osx":
             {
