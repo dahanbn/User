@@ -2,9 +2,12 @@
 	"folders":
 	[
 		{
-			"path": "C:\\Users\\dhann\\AppData\\Roaming\\Sublime Text\\Packages\\Yet-Another-Launcher"
-		}
-	],
+			"path": "C:\\Users\\dhann\\AppData\\Roaming\\Sublime Text\\Packages\\Yet-Another-Launcher",
+		},
+        {
+			"path": "D:\\git-repositories\\open-url"
+		},
+    ],
 	    "settings": 
     {
         // Source for LSP configuration is https://yeray.dev/python/setting-up-sublime-text-4-for-python
