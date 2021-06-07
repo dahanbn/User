@@ -2,8 +2,8 @@
 	"folders":
 	[
 		{
-			"path": "/Users/dh/Documents/python-playground"
-		}
+			"path": "/Users/dh/git-repos/python-playground"
+        }
 	],
     "settings": 
     {
@@ -18,10 +18,10 @@
             "pylsp": {
                 "enabled": true,
                 "command": [
-                    "/Users/dh/Documents/python-playground/.venv/bin/pylsp",
+                    "/Users/dh/git-repos/python-playground/.venv/bin/pylsp",
                 ],
                 "settings": {
-                    "pylsp.plugins.flake8.executable": "/Users/dh/Documents/python-playground/.venv/bin/flake8",
+                    "pylsp.plugins.flake8.executable": "/Users/dh/git-repos/python-playground/.venv/bin/flake8",
                 },
             },
         },
@@ -55,7 +55,7 @@
             },
             "osx":
             {
-                "shell_cmd": "/Users/dh/Documents/python-playground/.venv/bin/python3 -u \"$file\"",
+                "shell_cmd": "/Users/dh/git-repos/python-playground/.venv/bin/python3 -u \"$file\"",
             }
         },
     ],

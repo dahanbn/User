@@ -2,9 +2,12 @@
 	"folders":
 	[
 		{
-			"path": "/Users/dh/Library/Application Support/Sublime Text 3/Packages/Yet-Another-Launcher"
-		}
-	],
+			"path": "/Users/dh/Library/Application Support/Sublime Text 3/Packages/Yet-Another-Launcher",
+		},
+        {
+			"path": "/Users/dh/git-repos/open-url"
+		},
+    ],
 	    "settings": 
     {
         // Source for LSP configuration is https://yeray.dev/python/setting-up-sublime-text-4-for-python
