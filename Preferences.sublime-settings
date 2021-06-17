@@ -4,7 +4,7 @@
 		"Markdown",
 		"Python",
                   "Vintage",
-    ],
+         ],
 	"font_face": "IBM Plex Mono",
  	"ensure_newline_at_eof_on_save": true,
 
@@ -33,6 +33,10 @@
     "match_brackets_square": false,
     "match_tags": false,
 
-	"color_scheme": "Packages/Theme - Monokai Pro/Monokai Pro.sublime-color-scheme",
-	"theme": "Monokai Pro.sublime-theme",
+    // Theme related settings
+	"color_scheme": "Packages/ayu/ayu-light.sublime-color-scheme",
+	"theme": "ayu-light.sublime-theme",
+    "ui_native_titlebar":       true, // use native titlebars on macOs
+    "ui_separator":             true, // separators between panels
+    "ui_wide_scrollbars":       true, // wider scrollbars
 }

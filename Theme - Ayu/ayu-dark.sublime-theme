@@ -1,0 +1,27 @@
+[
+     // setting my favourite font in the user interface of the theme
+     {
+       "class": "sidebar_label",
+       "font.face": "IBM Plex Mono"
+     },
+     {
+       "class": "sidebar_heading",
+       "font.face": "IBM Plex Mono"
+     },
+     {
+       "class": "tab_label",
+       "font.face": "IBM Plex Mono"
+     },
+     {
+       "class": "label_control",
+       "font.face": "IBM Plex Mono"
+     },
+     {
+       "class": "quick_panel_label",
+       "font.face": "IBM Plex Mono"
+     },
+     {
+       "class": "quick_panel_path_label",
+       "font.face": "IBM Plex Mono"
+     }
+   ]
