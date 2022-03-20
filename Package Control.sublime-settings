@@ -2,6 +2,7 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"SideBarEnhancements",
 	],
 	"installed_packages":
 	[
@@ -23,6 +24,10 @@
 		"Hugofy",
 		"Indent XML",
 		"INI",
+		"JavaScript Completions",
+		"JavaScript Console",
+		"JavaScript Snippets",
+		"JsFormat",
 		"Keymaps",
 		"LaTeXTools",
 		"LSP",
