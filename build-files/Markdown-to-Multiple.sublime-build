@@ -1,46 +1,46 @@
 {
     "selector": "text.html.markdown",
-    "working_dir": "$file_path",
+    "working_dir": "$folder",
     "shell": true,
-    "shell_cmd": "pandoc \"$file\" --from markdown --template includes/scrlttr2dh.tex --pdf-engine=lualatex --to pdf -o \"$file_base_name.pdf\"",
+    "shell_cmd": "pandoc \"$file\" --from markdown --template includes/scrlttr2dh.tex --pdf-engine=lualatex --to pdf -o \"$file_path/$file_base_name.pdf\"",
     "variants":
     [
         {
             "name": "pandoc => pdf (scrlttr2dh)",
-            "shell_cmd": "pandoc \"$file\" --from markdown --template includes/scrlttr2dh.tex --pdf-engine=lualatex --to pdf -o \"$file_base_name.pdf\"",
+            "shell_cmd": "pandoc \"$file\" --from markdown --template includes/scrlttr2dh.tex --pdf-engine=lualatex --to pdf -o \"$file_path/$file_base_name.pdf\"",
         },
         {
             "name": "pandoc => pdf (scrlttr2dh) & open pdf",
             "windows": 
             {
-                "shell_cmd": "pandoc \"$file\" --from markdown --template includes/scrlttr2dh.tex --pdf-engine=lualatex --to pdf -o \"$file_base_name.pdf\" && cmd /c start \"\" \"$file_base_name.pdf\"",
+                "shell_cmd": "pandoc \"$file\" --from markdown --template includes/scrlttr2dh.tex --pdf-engine=lualatex --to pdf -o \"$file_path/$file_base_name.pdf\" && cmd /c start \"\" \"$file_path/$file_base_name.pdf\"",
             },
             "osx": 
             {
-                "shell_cmd": "pandoc \"$file\" --from markdown --template includes/scrlttr2dh.tex --pdf-engine=lualatex --to pdf -o \"$file_base_name.pdf\" && open \"$file_base_name.pdf\"",
+                "shell_cmd": "pandoc \"$file\" --from markdown --template includes/scrlttr2dh.tex --pdf-engine=lualatex --to pdf -o \"$file_path/$file_base_name.pdf\" && open \"$file_path/$file_base_name.pdf\"",
             },
             "linux": 
             {
-                "shell_cmd": "pandoc \"$file\" --from markdown --template includes/scrlttr2dh.tex --pdf-engine=lualatex --to pdf -o \"$file_base_name.pdf\" && xdg-open \"$file_base_name.pdf\"",
+                "shell_cmd": "pandoc \"$file\" --from markdown --template includes/scrlttr2dh.tex --pdf-engine=lualatex --to pdf -o \"$file_path/$file_base_name.pdf\" && xdg-open \"$file_path/$file_base_name.pdf\"",
             },
         },
         {
             "name": "pandoc => html",
-            "shell_cmd": "pandoc \"$file\" --from markdown --html -o \"$file_base_name.html\"",
+            "shell_cmd": "pandoc \"$file\" --from markdown --html -o \"$file_path/$file_base_name.html\"",
         },
         {
             "name": "pandoc => html + open it",
             "windows": 
             {
-                "shell_cmd": "pandoc \"$file\" --from markdown --html -o \"$file_base_name.html\" && cmd /c start \"\" \"$file_base_name.html\"",
+                "shell_cmd": "pandoc \"$file\" --from markdown --html -o \"$file_path/$file_base_name.html\" && cmd /c start \"\" \"$file_path/$file_base_name.html\"",
             },
              "osx": 
             {
-                "shell_cmd": "pandoc \"$file\" --from markdown --html -o \"$file_base_name.html\" && open \"$file_base_name.html\"",
+                "shell_cmd": "pandoc \"$file\" --from markdown --html -o \"$file_path/$file_base_name.html\" && open \"$file_path/$file_base_name.html\"",
             },
              "linux": 
             {
-                "shell_cmd": "pandoc \"$file\" --from markdown --html -o \"$file_base_name.html\" && xdg-open \"$file_base_name.html\"",
+                "shell_cmd": "pandoc \"$file\" --from markdown --html -o \"$file_path/$file_base_name.html\" && xdg-open \"$file_path/$file_base_name.html\"",
             },
         },
         {
@@ -68,15 +68,15 @@
             "name": "multimarkdown => html + open it",
             "windows": 
             {
-                "shell_cmd": "multimarkdown -b \"$file\" && cmd /c start \"\" \"$file_base_name.html\"",
+                "shell_cmd": "multimarkdown -b \"$file\" && cmd /c start \"\" \"$file_path/$file_base_name.html\"",
             },
              "osx": 
             {
-                "shell_cmd": "open \"$file_path\" && open \"$file_base_name.html\"",
+                "shell_cmd": "open \"$file_path\" && open \"$file_path/$file_base_name.html\"",
             },
              "linux": 
             {
-                "shell_cmd": "xdg-open \"$file_path\" && xdg-open \"$file_base_name.html\"",
+                "shell_cmd": "xdg-open \"$file_path\" && xdg-open \"$file_path/$file_base_name.html\"",
             },
         },
     ]
