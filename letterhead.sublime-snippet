@@ -1,0 +1,46 @@
+<snippet>
+    <content><![CDATA[
+---
+lco: ${1:Daniel}
+# lco: Daniel,Bine,Bine+Daniel,Evi
+
+date: ${2:TT.MM.JJJJ}
+
+# yourref-header: Ihr Zeichen
+# yourref-content: 
+
+# yourmail-header: Ihr Schreiben vom
+# yourmail-content: 
+
+# myref-header: Unser Zeichen
+# myref-content: 
+
+# customer-header: Kundennummer
+# customer-content: 
+
+# invoice-header: Rechnungsnummer
+# invoice-content: 
+
+subject: ${3:Betreff}
+address:
+ - ${4:Adresszeile 1}
+ - ${5:Adresszeile 2}
+ - ${6:Adresszeile 3}
+ - ${7:Adresszeile 4}
+opening: Sehr geehrte ${8:Damen und Herren},
+closing: Mit freundlichem Gruß
+
+# encludes: Anlagen
+# cc: Verteiler
+
+# typeface-serif: ${9:Real Text Pro}
+# typeface-sans: $9
+
+# signature: signature-$1.png
+...
+$0
+]]></content>
+    <tabTrigger>dh-letterhead</tabTrigger>
+    <description>Standardbriefkopf für Briefe mit Pandoc</description>
+    <scope>text.html.markdown</scope>
+</snippet>
