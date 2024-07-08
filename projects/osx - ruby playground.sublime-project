@@ -1,0 +1,41 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Users/dh/git-repos/ruby-playground"
+		}
+	],
+    "build_systems":
+    [
+        {   
+            "name": "Ruby 3.1.2 with terminus",
+            // Terminus
+            //"target": "terminus_exec",
+            //"cancel": "terminus_cancel_build",
+            //"focus": true, 
+            //"timeit": true,
+
+            // alternativ Terminus settings
+            "target": "terminus_open",
+            "auto_close": false,
+            "title": "Ruby output",
+            "timeit": true,
+            "post_window_hooks": [
+                ["carry_file_to_pane", {"direction": "right"}]
+            ],
+            // normal build file
+            
+            "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+            "selector": "source.ruby",
+            "windows":
+            {
+                "shell_cmd": "python3 -u \"$file\"",
+            },
+            "osx":
+            {
+                "shell_cmd": "/Users/dh/.rubies/ruby-3.1.2/bin/ruby \"$file\"",
+            }
+        },
+    ],
+
+}
