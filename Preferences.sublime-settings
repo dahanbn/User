@@ -1,10 +1,9 @@
 {
 	"ignored_packages":
 	[
-		"Markdown",
 		"Python",
-                  "Vintage",
-         ],
+		"Vintage",
+                            ],
 	"font_face": "IBM Plex Mono",
  	"ensure_newline_at_eof_on_save": true,
 
@@ -34,9 +33,10 @@
     "match_tags": false,
 
     // Theme related settings
-	"color_scheme": "Packages/ayu/ayu-light.sublime-color-scheme",
-	"theme": "ayu-light.sublime-theme",
+	"color_scheme": "Monokai Pro.sublime-color-scheme",
+	"theme": "Monokai Pro.sublime-theme",
     "ui_native_titlebar":       true, // use native titlebars on macOs
     "ui_separator":             true, // separators between panels
     "ui_wide_scrollbars":       true, // wider scrollbars
+                           "index_files": true,
 }
